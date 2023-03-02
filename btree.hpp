@@ -318,7 +318,7 @@ void BTree<T>::deleteData(Position& r, const T& e) {
       return;
       }
 
-    Position aux(r->getLeft() == nullptr ? aux = r->getLeft() : aux = r->getRight());
+    Position aux(r->getLeft() == nullptr ? aux = r->getRight() : aux = r->getLeft());
 
     delete r;
 
